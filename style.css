@@ -1,6 +1,6 @@
 :root {
   --gray-color: #ece7e7;
-  --cyan--color: #e6ebf7;
+  --cyan--color: #f1f2f58c;
   --font-family: "Arial", sans-serif;
   --font-size: 16px;
 }
@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* navbar section */
@@ -45,49 +45,54 @@ header .navbar {
   align-items: center;
 }
 .navbar .logo-container h1 {
-    font-weight: bold;;
-    font-size: 25px;
-    font-family: "Edu NSW ACT Cursive", cursive;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Edu NSW ACT Cursive", cursive;
 }
 
-.navbar ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 50px;
-    gap: 10px;
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 50px;
+  gap: 10px;
 }
 
+.navbar ul a {
+  text-decoration: none;
+  color: black;
+}
 .navbar ul li {
   list-style: none;
   font-family: var(--font-family);
-  font-weight:bold;
+  font-weight: bold;
   border-radius: 12px;
   padding: 5px 10px;
-  transition:0.2s ;
+  transition: 0.2s;
 }
 
-.navbar ul li:hover{
-    background-color:rgba(255, 255, 255, 0.322);
+.navbar ul li:hover {
+  background-color: rgba(255, 255, 255, 0.322);
 }
 
 .navbar ul .active {
   background-color: rgba(128, 128, 128, 0.253);
 }
 
-.navbar i{
-    font-size: 35px;
+.navbar i {
+  font-size: 35px;
 }
 
-.navbar .userCircle{
-    display: flex;
-    align-items: center;
-  
-    /* justify-content: center; */
+.navbar .userCircle {
+  display: flex;
+  align-items: center;
+
+  /* justify-content: center; */
 }
 
 /* hero section */
-.hero-content{
+
+.hero-content {
   width: 100%;
   background-color: var(--cyan--color);
   height: 220px;
@@ -101,32 +106,395 @@ header .navbar {
   position: relative;
 }
 
-.hero-content .text{
+.hero-content .text {
   margin-left: 10%;
 }
 
-.hero-content .text h1{
+.hero-content .text h1 {
   font-size: 40px;
   font-weight: bold;
   z-index: 1000;
 }
 
-.hero-content .text p{
+.hero-content .text p {
   font-size: 12px;
 }
-.hero-content .text button{
+.hero-content .text button {
   margin-top: 20px;
-  background:#0000A7 ;
+  background: #0000a7;
   border: none;
   color: white;
   padding: 10px;
   border-radius: 12px;
 }
 
-.hero-content img{
+.hero-content img {
   position: absolute;
   right: 10px;
   top: 55px;
   width: 200px;
   z-index: 1;
 }
+
+/* recomentation */
+
+.recomentation {
+  background: var(--cyan--color);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0px;
+  padding-bottom: 10px;
+}
+
+.recomentation .left {
+  border-left: 0.5px solid rgba(128, 128, 128, 0.514);
+}
+
+.recomentation .right {
+  border-right: 0.5px solid rgba(128, 128, 128, 0.514);
+}
+
+.recomentation .right,
+.left {
+  padding: 2px 20px;
+}
+
+.recomentation .right .bookContainer {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  padding: 5px;
+}
+
+.bookContainer .card {
+  background: white;
+  height: 12rem;
+  width: 10rem;
+  box-shadow: 2px 5px 5px black;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.recomentation .left .generContainer {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.generContainer .gcard {
+  background: white;
+  height: 5rem;
+  width: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 1px 5px 10px black;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gcard p {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(1, 23, 95, 0.774);
+}
+
+.leftText {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card img {
+  width: 99%;
+  border-radius: 12px;
+}
+
+/* aboutUs Section */
+
+.aboutUs {
+  background: rgb(237, 240, 247);
+  padding: 10px;
+}
+
+.aboutUsContainer {
+  height: 75dvh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.aboutUsContainer h1 {
+  margin-top: 60px;
+  font-size: 40px;
+}
+
+.aboutUsContainer .aboutCardContainer {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.aboutCardContainer .aboutCard {
+  width: 100%;
+  height: 140px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  padding: 10px;
+}
+
+.aboutCardContainer .aboutCard img {
+  width: 100px;
+}
+
+.aboutCard .aboutTC h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+/* recomentation Box */
+
+.recomentContainer {
+  width: 100%;
+  height: 250px;
+  padding: 15px;
+}
+
+.rBookContaier {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.rBookContaier .card {
+  background: white;
+  height: 12rem;
+  width: 10rem;
+  box-shadow: 2px 5px 5px black;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+/* footer */
+
+footer {
+  background: var(--gray-color);
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
+  padding: 50px 5% 20px;
+  margin-top: 50px;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.footerBrand {
+  max-width: 300px;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.footerLogo img {
+  width: 50px;
+  height: 50px;
+}
+
+.footerLogo h2 {
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-size: 25px;
+}
+
+.footerBrand p {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.socialIcons a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  text-decoration: none;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.socialIcons a:hover {
+  background: #0000a7;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.footerLinks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+}
+
+.footerLinks h3 {
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.footerLinks a {
+  display: block;
+  text-decoration: none;
+  color: #555;
+  font-size: 13px;
+  margin-bottom: 10px;
+  transition: 0.2s;
+}
+
+.footerLinks a:hover {
+  color: #0000a7;
+  padding-left: 5px;
+}
+
+.footerLinks p {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.7;
+  max-width: 200px;
+}
+
+.footerBottom {
+  max-width: 1400px;
+  margin: 40px auto 0;
+  padding-top: 15px;
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+  font-size: 12px;
+}
+
+/* search section */
+
+#search {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  background-color: #eceff6;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 80px;
+  gap: 20px; 
+  justify-content: space-between;
+}
+
+.searchContainer h1{
+  font-size: 40px;
+}
+
+.searchContainer .searchForm{
+  display: flex;
+  gap: 10px;
+}
+
+.searchContainer .searchForm input{
+  width: 40dvw;
+  height: 40px;
+  background: #dddddd;
+  border:none ;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.searchContainer .searchForm button{
+  border: none;
+  background: skyblue;
+  border-radius: 12px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+
+/*filter Box and Books  */
+#Books{
+  padding: 20px 40px;
+  height: 90dvh;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+  
+  
+}
+
+#Books .bookContainer{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  height: 90dvh;
+}
+
+.cardContainer{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.cardContainer button{
+  width: 10rem;
+  height: 30px;
+  border-radius: 5px;
+  background: aqua;
+  font-weight: bold;
+ 
+}
+
+#Books .paganation{
+  display: flex;
+  gap: 40px;
+  margin: 20px;
+  justify-content: center;
+}
+
+.paganation .pageNum{
+  background: whitesmoke;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.activeC{
+  background: rgb(21, 184, 248);
+   padding: 10px;
+  border-radius: 10px;
+}
+
+

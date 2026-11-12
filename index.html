@@ -17,6 +17,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -29,8 +33,8 @@
           <h1>AlearRead</h1>
         </div>
         <ul>
-          <li class="active">Home</li>
-          <li>Browse</li>
+          <a href="./index.html"> <li class="active">Home</li></a>
+          <a href="./browse.html"> <li>Browse</li></a>
           <li>About</li>
           <li>Contact</li>
         </ul>
@@ -48,11 +52,196 @@
             <p>Explore Thousands of books right at your finger tip</p>
             <button>Browse Books</button>
           </div>
-          <img  src="./project_img/heroImage.png" alt="img" >
+          <img src="./project_img/heroImage.png" alt="img" />
+        </div>
+
+        <!-- popular and geners selectors -->
+        <div class="recomentation">
+          <div class="right">
+            <h4>Popular Books</h4>
+            <div class="bookContainer">
+              
+              <div class="card">
+                <img src="./project_img/images (1).jfif" />
+              </div>
+              <div class="card">
+                <img src="./project_img/images (2).jfif" />
+              </div>
+              <div class="card">
+                <img src="./project_img/images (3).jfif" />
+              </div>
+              <div class="card">
+                <img src="./project_img/images.jfif" />
+              </div>
+            </div>
+          </div>
+
+          <div class="left">
+            <div class="leftText">
+              <h4>Geners</h4>
+              <h4>Views All</h4>
+            </div>
+
+            <div class="generContainer">
+              <div
+                class="gcard"
+                style="background-image: url(./project_img/Fantancy.jpg)"
+              >
+                <p>Fantacys</p>
+              </div>
+              <div
+                class="gcard"
+                style="background-image: url(./project_img/Mystery.jpg)"
+              >
+                <p>Mysterys</p>
+              </div>
+              <div
+                class="gcard"
+                style="background-image: url(./project_img/download.jfif)"
+              >
+                <p>Scifi</p>
+              </div>
+              <div
+                class="gcard"
+                style="background-image: url(./project_img/images\ \(5\).jfif)"
+              >
+                <p>Horror</p>
+              </div>
+              <div
+                class="gcard"
+                style="background-image: url(./project_img/images\ \(6\).jfif)"
+              >
+                <p>Love</p>
+              </div>
+
+              <div
+                class="gcard"
+                style="background-image: url(./project_img/images\ \(7\).jfif)"
+              >
+                <p>Life</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aboutUs">
+        <div class="aboutUsContainer">
+          <h1>Find Your Next Book To Get lost In</h1>
+          <div class="aboutCardContainer">
+            <div class="aboutCard">
+              <img src="./project_img/book1.png" />
+              <div class="aboutTC">
+                <h1>Vast Libary</h1>
+                <p>Access a vast collection of books</p>
+              </div>
+            </div>
+            <div class="aboutCard">
+              <img src="./project_img/multidev.png" />
+              <div class="aboutTC">
+                <h1>Access Anywhere</h1>
+                <p>Read your favorite books online on any device</p>
+              </div>
+            </div>
+            <div class="aboutCard">
+              <img src="./project_img/pl.png" />
+              <div class="aboutTC">
+                <h1>Personal Libary</h1>
+                <p>Save books to your personal libary for ease</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- recomentation section -->
+      <section id="recometForYou">
+        <div class="recomentContainer">
+          <h3>Recoment For You</h3>
+          <div class="rBookContaier">
+            <div class="card">
+              <img src="./project_img/images (1).jfif" />
+            </div>
+            <div class="card">
+              <img src="./project_img/images (2).jfif" />
+            </div>
+            <div class="card">
+              <img src="./project_img/images (3).jfif" />
+            </div>
+            <div class="card">
+              <img src="./project_img/images.jfif" />
+            </div>
+
+            <div class="card">
+              <img src="./project_img/images (1).jfif" />
+            </div>
+            <div class="card">
+              <img src="./project_img/images (1).jfif" />
+            </div>
+            <div class="card">
+              <img src="./project_img/images (2).jfif" />
+            </div>
+          </div>
+          <div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+
+          </div>
         </div>
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="footerContainer">
+        <div class="footerBrand">
+          <div class="footerLogo">
+            <img src="./project_img/logo.png" alt="AlearRead Logo" />
+            <h2>AlearRead</h2>
+          </div>
+
+          <p>
+            Discover your next great read and explore thousands of books from
+            anywhere, on any device.
+          </p>
+
+          <div class="socialIcons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="footerLinks">
+          <div>
+            <h3>Explore</h3>
+            <a href="#">Home</a>
+            <a href="#">Browse Books</a>
+            <a href="#">Popular Books</a>
+            <a href="#">Genres</a>
+          </div>
+
+          <div>
+            <h3>Company</h3>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+
+          <div>
+            <h3>Follow Us</h3>
+            <p>Stay connected and discover new stories every day.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footerBottom">
+        <p>© 2026 AlearRead. All rights reserved.</p>
+        <p>Made for book lovers.</p>
+      </div>
+    </footer>
+
+    <script></script>
   </body>
 </html>
